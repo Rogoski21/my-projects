@@ -1,0 +1,14 @@
+body {
+  background-color: rgb(73, 73, 73);
+}
+div {
+  display: table;
+}
+
+.item {
+  display: flex;
+  width: fit-content + 1px;
+  height: 29px;
+  background-color: rgba(245, 245, 245, 0.822);
+  font-size: 20px;
+}

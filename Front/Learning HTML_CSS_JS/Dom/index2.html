@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <input id="nome" />
+    </div>
+
+    <script>
+      var linkEmenent = document.createElement("a");
+
+      linkEmenent.setAttribute("href", "https://github.com/Rogoski21");
+
+      var txt = document.createTextNode("acessar meu gitHub");
+
+      linkEmenent.appendChild(txt);
+
+      var container = document.getElementById("app");
+      container.appendChild(linkEmenent);
+
+      var inputElement = document.getElementById("nome");
+      container.removeChild(inputElement); //removendo por meio do JS
+    </script>
+  </body>
+</html>

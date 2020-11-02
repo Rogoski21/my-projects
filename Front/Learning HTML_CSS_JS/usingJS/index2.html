@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetElement</title>
+  </head>
+  <body>
+    <div id="main1">
+      <h2>Finding HTML Elements</h2>
+      <p>document.getElementById(id) Find an element by element id</p>
+      <br />
+      <p>document.getElementsByTagName(name) Find elements by tag name</p>
+      <br />
+      <p>document.getElementsByClassName(name) Find elements by class name</p>
+      <br />
+    </div>
+    <hr />
+    <div id="main2">
+      <h2>Changing HTML Elements</h2>
+      <p>
+        element.innerHTML = new html content Change the inner HTML of an element
+      </p>
+      <br />
+      <p>
+        element.attribute = new value Change the attribute value of an HTML
+        element
+      </p>
+      <br />
+      <p>
+        element.style.property = new style Change the style of an HTML
+        element/p>
+      </p>
+      <h3>Method</h3>
+      <p>
+        element.setAttribute(attribute, value) Change the attribute value of an
+        HTML element
+      </p>
+      <br />
+    </div>
+    <hr />
+    <div id="main3">
+      <h2>Adding and Deleting Elements</h2>
+      <p>document.createElement(element) Create an HTML element</p>
+      <br />
+      <p>document.removeChild(element) Remove an HTML element</p>
+      <br />
+      <p>document.appendChild(element) Add an HTML element</p>
+      <br />
+      <p>document.replaceChild(new, old) Replace an HTML element</p>
+      <br />
+      <p>document.write(text) Write into the HTML output stream</p>
+      <hr />
+    </div>
+    <div id="main4">
+      <h2>Adding Events Handlers</h2>
+      <p>
+        document.getElementById(id).onclick = function(){code} Adding event
+        handler code to an onclick event
+      </p>
+    </div>
+    <hr />
+    <div id="main5">
+      <h2>TESTE</h2>
+      <p id="teste1"></p>
+      <br />
+      <p id="teste2">大家好</p>
+      <br />
+      <p id="demo"></p>
+      <br />
+
+      <p id="par"></p>
+    </div>
+    <script>
+      var a = (document.getElementById("teste1").innerHTML = "HOLLA MANITO");
+
+      var b = document.getElementById("teste2");
+
+      document.getElementById("demo").innerHTML =
+        "testando o texto " + b.innerHTML;
+
+      //testando get main com div
+
+      var div1 = document.getElementById("main1");
+      var p1 = div1.getElementsByTagName("p");
+      document.getElementById("par").innerHTML =
+        "--------------------------------------------  " +
+        div1.innerHTML +
+        "------------------------------------------------";
+    </script>
+  </body>
+</html>
